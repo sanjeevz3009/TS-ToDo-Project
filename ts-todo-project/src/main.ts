@@ -30,7 +30,9 @@ const initApp = (): void => {
     template.render(fullList);
   });
 
-  const clearItems = document.getElementById('clearItems') as HTMLButtonElement;
+  const clearItems = document.getElementById(
+    'clearItemsButton',
+  ) as HTMLButtonElement;
   clearItems.addEventListener('click', (): void => {
     fullList.clearList();
     template.clear();
